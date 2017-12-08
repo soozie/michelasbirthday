@@ -1,0 +1,225 @@
+
+/* HEX COLOR PALETTE ORANGE-CLASSY */
+$cl-cream: #FFFBF0;
+$cl-beige: #CCC4B8;
+$cl-bglight: rgba(204, 197, 185, 0.6);
+$cl-tortora: #403D39;
+$cl-dark: #252422;
+$cl-light: #EDE9E1;
+$cl-orange: #EB5E28;
+$cl-wall: #F4F4ED;
+$cl-wallight: rgba(244, 244, 237, 0.9);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+
+  body {
+
+    h1 {
+      margin: 0;
+    }
+
+    .App {
+      text-align: center;
+
+      #section-1 {
+        background-image: url('./images/section-1.jpg');
+        background-size: cover;
+        height: calc(100vh);
+        width: 100%;
+
+        .birthdayBox {
+          height: 100%;
+          padding-top: 100px;
+          position: relative;
+          width: 100%;
+
+          .happyBirthday {
+
+            display: inline-block;
+            font-size: 65px;
+            padding: 16px;
+            text-transform: uppercase;
+            position: absolute;
+            top: auto;
+            left: auto;
+            right: 100px;
+            bottom: 100px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+
+            &.yellow {
+              background-color: yellow;
+            }
+
+            &.orange {
+              background-color: orange;
+            }
+
+            &.red {
+              background-color: red;
+            }
+
+            &.pink {
+              background-color: pink;
+            }
+
+            &.violet {
+              background-color: violet;
+            }
+
+            &.blue {
+              background-color: blue;
+            }
+
+            &.lightblue {
+              background-color: lightblue;
+            }
+
+            &.green {
+              background-color: green;
+            }
+
+            &.active {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      #section-2 {
+        background-image: url('./images/stars-sky.jpg');
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: calc(100vh);
+        width: 100%;
+
+        .top {
+          height: 70px;
+          padding: 16px;
+          width: 100%;
+
+          h1 {
+            color: $cl-wall;
+            font-size: 65px;
+            padding: 16px;
+            text-transform: uppercase;
+            border-radius: 10px;
+          }
+        }
+
+        .bottom {
+          width: 100%;
+          padding: 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+          max-height: 380px;
+          height: 100%;
+
+          .quiz {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .question {
+              max-width: 380px;
+              width: 100%;
+              height: 95px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              .question-label {
+                color: $cl-wall;
+                font-size: 24px;
+                font-weight: 100;
+                padding-bottom: 16px;
+              }
+
+              .question-input {
+                width: 200px;
+                height: 32px;
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      #section-3 {
+        background-image: url('./images/Sparkle.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh);
+        width: 100%;
+        padding-top: 32px;
+        justify-content: space-around;
+
+        .password {
+          background-color: $cl-wallight;
+          height: 100%;
+          padding: 16px;
+          width: 60%;
+          box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          max-height: 380px;
+
+          h2 {
+            color: #FF2E96;
+            font-size: 24px;
+            padding: 16px;
+            font-weight: 100;
+            text-shadow: 1px 1px $cl-wallight;
+          }
+        }
+
+        .mail {
+          background-color: $cl-wallight;
+          width: 20%;
+          padding: 32px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-bottom: 32px;
+          box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          color: #FF2E96;
+          transition: all 200ms ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #FF2E96;;
+            color: $cl-wall;
+          }
+
+          &:active {
+            transform: scale(.97);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
