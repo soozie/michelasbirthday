@@ -29,6 +29,6 @@ $(document).ready(() => {
   startAnimationInterval();
 
   $('#mail-button').on('click', () => {
-    window.open('https://accounts.google.com/ServiceLogin?hl=it', '_blank');
+    window.open('https://mail.google.com/', '_blank');
   });
 });
